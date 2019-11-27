@@ -1,0 +1,60 @@
+/* CSS reset 开始 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif; 
+    font-size:12px;
+    margin:0 auto;
+}
+ol,ul,
+li {
+    list-style: none;
+}
+a { 
+    text-decoration:none; 
+    color:#333; 
+}
+a:hover{
+    text-decoration:none;
+}
+img{ 
+    border:0;
+    vertical-align: middle; 
+}
+input, 
+textarea {
+     box-sizing: border-box; 
+}
+/* CSS reset 结束 */
+
+/* 公用 开始 */
+/* 清除浮动 */
+.clearfix:after { 
+    content: "."; 
+    display: block; 
+    height: 0; 
+    font-size: 0;
+    clear: both; 
+    visibility: hidden;
+}
+/*强制换行   禁止换行*/
+.break_word { 
+    word-wrap:break-word; 
+    word-break:break-all;
+}
+.keep_all { 
+    word-break:keep-all; 
+    white-space:nowrap; 
+}
+/* 超出显示省略号 */
+.ellipsis { 
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    display: block;
+    white-space: nowrap;
+ }
+/* 公共结束 */
