@@ -1,3 +1,4 @@
+window.onload = function(){
 // 客户
 var customerUndrop = document.querySelectorAll(".home_customer_drop");
 var customerMore = document.querySelector('.home_customer_more');
@@ -30,3 +31,4 @@ var inputR = formlist.querySelectorAll("input");
             this.checked = "on";
         })
     }
+}

@@ -1,3 +1,4 @@
+
 //1.获取元素
 var scroll = document.querySelector(".scroll");
 var scrollImg = document.querySelector(".scroll-img");

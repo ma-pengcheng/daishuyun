@@ -1,0 +1,206 @@
+/* container stack_banner begin*/
+.stack_banner {
+    margin-top: 60px;
+    height:700px;
+}
+.home_banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#0f025c, #031447);
+}
+.home_banner img {
+    height: 700px;
+    width: 1920px;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    max-width: none;
+}
+/* container stack_banner end */
+/* container stack_product begin*/
+.stack_product {
+    padding: 70px 0 55px;
+}
+.stack_product_group {
+    width: 910px;
+    margin: 0 auto;
+    margin-top: 54px;
+}
+.stack_product_item {
+    margin-bottom: 15px;
+}
+.stack_product_introduce {
+    float: left;
+    width: 460px;
+    padding-top: 98px;
+}
+.stack_product_title {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+.stack_product_text {
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+}
+.stack_product_img {
+    float: right;
+}
+.stack_product_img img{
+    width: 310px;
+    height: 270px;
+    border: 0;
+    vertical-align: middle;
+}
+.stack_product_item2>.stack_product_introduce,
+.stack_product_item4>.stack_product_introduce {
+    float: right;
+}
+.stack_product_item2>.stack_product_img,
+.stack_product_item4>.stack_product_img {
+    float: left;
+}
+/* container stack_product end*/
+/* container stack_architecture begin */
+.stack_architecture {
+    padding: 70px 0 64px;
+    background: #f5f7fa;
+}
+.stack_architecture_img {
+    text-align: center;
+    margin-top: 55px;
+}
+.stack_architecture_img img {
+    width: 990px;
+    height: 823px;
+}
+/* container stack_architecture end */
+/* container stack_function begin */
+.stack_function {
+    padding: 80px 0 100px;
+    background: #f5f7fa url(../images/stack_bj.png) no-repeat center top;
+    background-size: 1920px 100%;
+}
+.stack_function_title {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.fuction_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fuction_title span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    padding: 0 24px;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+}
+.fuction_title span:last-child {
+    border-right: 0;
+}
+.fuction_title span.tab_current {
+    color: #4faaff;
+    border:0;
+    border-right: 1px solid #fff;
+}
+.fuction_btm {
+    width: 1000px;
+    margin: 0 auto;
+}
+.function_btm_top {
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+    background: linear-gradient(to right, #6ddead , #16a3ff);
+}
+.faq_group {
+    background: #fff;
+}
+.function_btm_top~.function_btm_top{
+    display: none;
+}
+.faq_group~.faq_group {
+    display: none;
+}
+.faq_item {
+    border-bottom: 1px solid #f6f6f6;
+}
+.faq_item_top {
+    position: relative;
+    height: 80px;
+    padding: 20px 36px 0 28px;
+    cursor: pointer;
+}
+.faq_item_left {
+    float: left;
+    width: 34px;
+    margin-right: 15px;
+}
+.faq_item_left img {
+    width: 34px;
+    height: 34px;
+}
+.faq_item_center {
+    float: left;
+}
+.faq_item_title {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.faq_item_des {
+    font-size: 14px;
+    color: #999999;
+}
+.faq_item_icon {
+    position: absolute;
+    right: 36px;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    background: url(../images/stack_d1.png) no-repeat center center;
+    background-size: 100% 100%;
+    transition: all .2s ease-in-out;
+}
+.faq_item_icon2 {
+    background: url(../images/stack_d2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.faq_item_btm {
+    display: none;
+    font-size: 14px;
+    color: #666666;
+    line-height: 28px;
+    padding: 18px 28px 12px;
+    background: #f7f7f7;
+}
+.faq_item_btm
+.faq_item_btm p {
+    position: relative;
+    padding-left: 18px;
+}
+.faq_item_btm p img {
+    margin-right: 5px;
+    width: 6px;
+    height: 6px;
+}
+/* container stack_function end */
+/* container client begin */
+/* container client end */
