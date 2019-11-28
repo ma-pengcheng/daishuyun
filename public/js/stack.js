@@ -2,6 +2,8 @@ window.onload = function(){
 // 数栈页面 产品功能介绍
 // 获取元素
 var faqIcon = document.querySelectorAll(".faq_item_icon");
+// 全部获取了一共29个，功能是实现了，但是逻辑和效率不是太对
+// console.log(faqIcon);
 var faqBtm = document.querySelectorAll(".faq_item_btm");
 var tabSlider = document.querySelector(".slider_wrap_item");
 var tabItem = tabSlider.querySelectorAll("span");
@@ -63,7 +65,6 @@ for(var i = 0;i < listItems.length; i++){
     listItems[i].setAttribute("listIndex",i);
     listItems[i].addEventListener("click",function(){
         var listIndex = this.getAttribute("listIndex");
-        console.log(listIndex);
         for(var i = 0; i < listItems.length;i++){
             listItems[i].className = "";
         }
@@ -76,7 +77,20 @@ for(var i = 0;i < listItems.length; i++){
     })
 
 }
-// 二级切换 想不出来
-  var clientTabItem = document.querySelectorAll(".tab_slider_item");
-  var clientTabslider = clientTabItem.querySelectorAll("span");
+// 二级切换 为了完成而完成的方法(只是展示二级切换的效果)，不是可取的(存在无法与一级切换关联的bug)，为所有的client_slider后面的span添加了类名,
+var clientSliderItem = document.querySelectorAll(".c1");
+var clientTabItem = document.querySelectorAll(".client_tab_item");
+    for(var i = 0; i < clientSliderItem.length;i++){
+        clientSliderItem[i].setAttribute("clientIndex",i);
+        clientSliderItem[i].addEventListener("click",function(){
+            for(var i = 0; i < clientSliderItem.length;i++){
+                clientSliderItem[i].className = "c1";
+                clientTabItem[i].style.display = "none";
+            }
+            this.className = "current c1";
+            var clientIndex = this.getAttribute("clientIndex");
+            clientTabItem[clientIndex].style.display = "block";
+        })
+
+    }
 }
