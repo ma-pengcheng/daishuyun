@@ -614,11 +614,14 @@
             <div class="client_title home_title">
                 <h4>客户案例</h4>
             </div>
+            <!-- 一级切换栏目前只做企业经营大脑1、区域经济大脑2两个，其余的标签和内容推测可以使用JS的方法生成和添加，现在所学的办法太笨，所以只做展示效果和代码练习用，后面有更好的方法
+            结构中例如client_list、client_group等一些类名的语义效果大于实际在结构中起到的作用 -->
             <div class="client_cont clearfix">
+                <!-- 一级切换栏 包含企业经营大脑1、区域经济大脑2、数字政府3、数字景区4、数字教育5等 -->
                 <div class="client_list">
                     <div class="client_slider">
                         <div class="client_slider_item">
-                            <span>企业经营大脑</span>
+                            <span class="current">企业经营大脑</span>
                             <span>区域经济大脑</span>
                             <span>数字政府</span>
                             <span>数字景区</span>
@@ -626,20 +629,228 @@
                         </div>
                     </div>
                 </div>
+                <!-- 企业经营大脑 1 -->
                 <div class="client_des">
                     <div class="client_group">
                         <div class="client_item">
-                            
+                            <!-- 二级切换栏 企业经营大脑的tab栏 包含中金易云和易融星空 -->
+                            <div class="client_tab_title">
+                                <div class="client_tab_slider">
+                                    <div class="tab_slider_item">
+                                        <span class="current">中金易云</span>
+                                        <span>易融星空</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 中金易云和易融星空展示模块 -->
+                            <div class="client_tab_group">
+                                <!-- 中金易云 1-1 -->
+                                <div class="client_tab_item">
+                                    <div class="client_btm clearfix">
+                                        <div class="client_left">
+                                            <div class="client_page_item clearfix">
+                                                <div class="client_page_left">
+                                                    <div class="client_page_icon"><img src="./picture/client_icon_1.png" alt=""></div>
+                                                    <div class="client_page_a">业务场景</div>
+                                                </div>
+                                                <div class="client_page_right">新华书店与中金数据成立合资公司，拥有全国最大的图书标准书目库。在图书行业，20%的畅销图书贡献了80%的利润，编辑选题跟风严重，无法以数据做参考。图书发行时，以人工经验进行不同门店的图书配比，部分门店库存积压严重。</div>
+                                            </div>
+                                            <div class="client_page_item clearfix">
+                                                <div class="client_page_left">
+                                                    <div class="client_page_icon"><img src="./picture/client_icon_2.png" alt=""></div>
+                                                    <div class="client_page_a">客户收益</div>
+                                                </div>
+                                                <div class="client_page_right">
+                                                    打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台，为图书行业提供选题助手、销量预测、竞品分析等功能，打造图书行业新零售
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client_right">
+                                            <img src="./picture/client_1_1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 易融星空 1-2  二级切换功能没有想出来 为了不影响后面布局 按时隐藏-->
+                                <div class="client_tab_item" style="display: none;">
+                                    <div class="client_btm clearfix">
+                                        <!-- 左侧文字描述部分 -->
+                                        <div class="client_left">
+                                            <div class="client_page_item clearfix">
+                                                <div class="client_page_left">
+                                                    <div class="client_page_icon"><img src="./picture/client_icon_1.png" alt=""></div>
+                                                    <div class="client_page_a">业务场景</div>
+                                                </div>
+                                                <div class="client_page_right">新华书店与中金数据成立合资公司，拥有全国最大的图书标准书目库。在图书行业，20%的畅销图书贡献了80%的利润，编辑选题跟风严重，无法以数据做参考。图书发行时，以人工经验进行不同门店的图书配比，部分门店库存积压严重。</div>
+                                            </div>
+                                            <div class="client_page_item clearfix">
+                                                <div class="client_page_left">
+                                                    <div class="client_page_icon"><img src="./picture/client_icon_2.png" alt=""></div>
+                                                    <div class="client_page_a">客户收益</div>
+                                                </div>
+                                                <div class="client_page_right">
+                                                    打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台，为图书行业提供选题助手、销量预测、竞品分析等功能，打造图书行业新零售
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 右侧图片展示 -->
+                                        <div class="client_right">
+                                            <img src="./picture/client_1_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <!-- 区域经济大脑 2 -->
+                <div class="client_des" style="display: none;">
+                    <div class="client_group">
+                            <div class="client_item">
+                                <!-- 二级切换栏 区域经济大脑 包含山西商务厅和城市大脑、一带一路 -->
+                                <div class="client_tab_title">
+                                    <div class="client_tab_slider">
+                                        <div class="tab_slider_item">
+                                            <span class="current">山西商务厅</span>
+                                            <span>城市大脑</span>
+                                            <span>一带一路</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 山西商务厅和城市大脑、一带一路展示模块 -->
+                                <div class="client_tab_group">
+                                    <!-- 山西商务厅 2-1 -->
+                                    <div class="client_tab_item">
+                                        <div class="client_btm clearfix">
+                                            <div class="client_left">
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_1.png" alt=""></div>
+                                                        <div class="client_page_a">业务场景</div>
+                                                    </div>
+                                                    <div class="client_page_right">新华书店与中金数据成立合资公司，拥有全国最大的图书标准书目库。在图书行业，20%的畅销图书贡献了80%的利润，编辑选题跟风严重，无法以数据做参考。图书发行时，以人工经验进行不同门店的图书配比，部分门店库存积压严重。</div>
+                                                </div>
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_2.png" alt=""></div>
+                                                        <div class="client_page_a">客户收益</div>
+                                                    </div>
+                                                    <div class="client_page_right">
+                                                        打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台，为图书行业提供选题助手、销量预测、竞品分析等功能，打造图书行业新零售
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="client_right">
+                                                <img src="./picture/client_2_1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 城市大脑 2-2 -->
+                                    <div class="client_tab_item" style="display: none;">
+                                        <div class="client_btm clearfix">
+                                            <!-- 左侧文字描述部分 -->
+                                            <div class="client_left">
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_1.png" alt=""></div>
+                                                        <div class="client_page_a">业务场景</div>
+                                                    </div>
+                                                    <div class="client_page_right">新华书店与中金数据成立合资公司，拥有全国最大的图书标准书目库。在图书行业，20%的畅销图书贡献了80%的利润，编辑选题跟风严重，无法以数据做参考。图书发行时，以人工经验进行不同门店的图书配比，部分门店库存积压严重。</div>
+                                                </div>
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_2.png" alt=""></div>
+                                                        <div class="client_page_a">客户收益</div>
+                                                    </div>
+                                                    <div class="client_page_right">
+                                                        打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台，为图书行业提供选题助手、销量预测、竞品分析等功能，打造图书行业新零售
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 右侧图片展示 -->
+                                            <div class="client_right">
+                                                <img src="./picture/client_2_2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 一带一路 2-3 -->
+                                    <div class="client_tab_item" style="display: none;">
+                                        <div class="client_btm clearfix">
+                                            <!-- 左侧文字描述部分 -->
+                                            <div class="client_left">
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_1.png" alt=""></div>
+                                                        <div class="client_page_a">业务场景</div>
+                                                    </div>
+                                                    <div class="client_page_right">新华书店与中金数据成立合资公司，拥有全国最大的图书标准书目库。在图书行业，20%的畅销图书贡献了80%的利润，编辑选题跟风严重，无法以数据做参考。图书发行时，以人工经验进行不同门店的图书配比，部分门店库存积压严重。</div>
+                                                </div>
+                                                <div class="client_page_item clearfix">
+                                                    <div class="client_page_left">
+                                                        <div class="client_page_icon"><img src="./picture/client_icon_2.png" alt=""></div>
+                                                        <div class="client_page_a">客户收益</div>
+                                                    </div>
+                                                    <div class="client_page_right">
+                                                        打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台，为图书行业提供选题助手、销量预测、竞品分析等功能，打造图书行业新零售
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 右侧图片展示 -->
+                                            <div class="client_right">
+                                                <img src="./picture/client_2_3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- container 五楼 client 结束 -->
+    <!-- container 六楼form 开始 -->
+    <div class="home_form">
+                <div class="wrap">
+                    <div class="home_title">
+                        <h4>此刻起，让数据产生更大价值</h4>
+                        <div class="home_title_text">填写即可获得免费专家服务和资料下载</div>
+                    </div>
+                    <div class="form">
+                        <form action="post">
+                            <div class="input_list">
+                                <span>公司名称</span><input type="text" placeholder="请输入公司名称">
+                            </div>
+                            <div class="input_list">
+                                <span>所在城市</span><input type="text" placeholder="请输入所在城市">
+                            </div>
+                            <div class="input_list">
+                                <span>所属行业</span><input type="text" placeholder="请输入所属行业">
+                            </div>
+                            <div class="input_list">
+                                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span><input type="text" placeholder="请输入您的姓名">
+                            </div>
+                            <div class="input_list">
+                                <span>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话</span><input type="text" placeholder="请输入您的电话">
+                            </div>
+                            <div class="input_list_radio">
+                                <span>我&nbsp;想&nbsp; 要</span><input type="radio" checked>&nbsp;数据中台解决方案
+                                <input type="radio">&nbsp;数栈<input type="radio">&nbsp;数据可视化大屏幕
+                                <input type="radio">&nbsp;称为合作伙伴
+                            </div>
+                            <div class="input_list_textarea">
+                                <span>其他需求</span><textarea name="" placeholder="请输入问题描述"></textarea>
+                            </div>
+                            <div class="input_list_submit">
+                                <input type="submit" value="提交问题">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </div>
+    <!-- container 六楼form 结束 -->
     <!-- container 结束 -->
-    <!-- 尾部footer 开始 -->
-    <div class="footer">
+    <!-- 尾部footer 开始  因为页面设置问题，不知为啥footer与上面的按钮的距离会不同 因此设置行内样式调整一下-->
+    <div class="footer" style="margin-top: 60px;">
             <div class="wrap">
                 <div class="footer_top clearfix">
                     <div class="footer_list_left">

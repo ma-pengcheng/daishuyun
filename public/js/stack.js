@@ -50,4 +50,33 @@ for(var i = 0; i < faqIcon.length;i++){
         
     })
 }
+
+// 客户案例板块的切换 (前两个部分功能)
+// 获取元素
+ var clientList = document.querySelector(".client_list")
+ var listItems = clientList.querySelectorAll("span");
+ var clientDes = document.querySelectorAll(".client_des");
+//  验证是否获取成功
+//  console.log(clientDes.length);
+// 一级切换(点击左边，更换右面的内容)
+for(var i = 0;i < listItems.length; i++){
+    listItems[i].setAttribute("listIndex",i);
+    listItems[i].addEventListener("click",function(){
+        var listIndex = this.getAttribute("listIndex");
+        console.log(listIndex);
+        for(var i = 0; i < listItems.length;i++){
+            listItems[i].className = "";
+        }
+        // 右侧的展示框只写了前两个list的，数量不一致，所以不能用同一个for循环排他
+        for(var i = 0;i < clientDes.length;i++){
+            clientDes[i].style.display = "none";
+        }
+        this.className = "current";
+        clientDes[listIndex].style.display = "block";
+    })
+
+}
+// 二级切换 想不出来
+  var clientTabItem = document.querySelectorAll(".tab_slider_item");
+  var clientTabslider = clientTabItem.querySelectorAll("span");
 }
