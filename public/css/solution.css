@@ -1,0 +1,181 @@
+/* solution.html container begin*/
+/* estate_banner begin*/
+.estate_banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(../picture/sale_banner.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden; }
+
+.estate_banner_inner {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto; }
+
+.estate_banner_inner a {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  left: 50%;
+  bottom: 19%;
+  font-size: 15px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  color: #fff;
+  transition: all 0.8s;
+  background: linear-gradient(to right, #6ddead, #16a3ff); }
+
+.estate_banner_inner a:hover {
+  background: linear-gradient(to right, #5CFFB8, #16a3ff); }
+
+/* estate_babber end*/
+/* estate_pain begin */
+.estate_pain {
+  padding: 70px 0 40px; }
+
+.estate_pain_group {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.estate_pain_item {
+  width: 381px;
+  height: 141px;
+  background-color: red;
+  margin-bottom: 29px;
+  padding: 36px 20px 0 34px;
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.5s; }
+
+.estate_pain_item:hover {
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2); }
+
+.estate_pain_item_icon {
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: middle; }
+
+.estate_pain_item_icon img {
+  width: 40px;
+  height: 40px; }
+
+.estate_pain_item_right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 240px; }
+
+.estate_pain_item_title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 11px; }
+
+.estate_pain_item_text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px; }
+
+/* estate_pain end */
+/* estate_architecture begin*/
+.estate_architecture {
+  padding: 70px 0;
+  background: #f5f7fa; }
+
+.estate_architecture_btm {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 54px; }
+
+.estate_architecture_btm img {
+  width: 1000px;
+  height: 825px; }
+
+/* estate_architecture end*/
+/*  estate_scene begin*/
+.estate_scene {
+  height: 758px;
+  padding-top: 56px;
+  background: url(../picture/estate_bj.png) no-repeat center center;
+  background-size: cover; }
+
+.estate_scene_title {
+  text-align: center;
+  font-size: 24px;
+  color: #fff; }
+
+.estate_scene_btm {
+  width: 1070px;
+  margin: 54px auto 0; }
+
+.estate_scene_btm img {
+  width: 1070px;
+  height: 496px; }
+
+/*  estate_scene end*/
+/*  estate_worth begin */
+.estate_worth {
+  padding: 70px 0;
+  background: #f5f7fa; }
+
+.estate_worth_group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px; }
+
+.estate_worth_item {
+  width: 278px;
+  height: 306px;
+  width: 278px;
+  height: 306px;
+  background: #fff;
+  padding: 48px 20px 0;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.5s; }
+
+.estate_worth_item:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2); }
+
+.estate_worth_item_icon {
+  width: 44px;
+  margin: 0 auto 20px; }
+
+.estate_worth_item_icon img {
+  width: 44px;
+  height: 44px; }
+
+.estate_worth_item_title {
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold; }
+
+.estate_worth_item_text {
+  padding-left: 30px; }
+
+.estate_worth_item_text p {
+  position: relative;
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  margin-bottom: 18px;
+  padding-left: 14px; }
+
+.estate_worth_item_text p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #2491F7;
+  border-radius: 50%; }
+
+/*  estate_worth end */
+/* solution.html container end*/
