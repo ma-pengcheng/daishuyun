@@ -1,5 +1,8 @@
 /* visualization 数据可视化页面 开始*/ 
 /* container banner begin*/ 
+.header_f {
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+}
 .data_banner {
     background: url(../picture/visualization_banner.png) no-repeat center center;
     background-size: cover;
@@ -18,14 +21,18 @@
     width: 1100px;
     margin: 0 auto;
 }
-.data_nav.data_nav_fixed {
-    position: fixed;
-    z-index: 99998;
+.data_nav {
     width: 100%;
-    top: 60px;
-    left: 0;
     background: #fff;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+}
+.data_nav_f {
+    position: fixed;
+    top: 60px;
+    z-index: 9900;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,0.12);
 }
 .data_nav a {
     display: inline-block;
@@ -56,12 +63,12 @@
 .data_visual {
     padding: 70px 0 75px;
 }
-.data_item {
+.data-item {
     position: relative;
 }
 .data_anchor {
     position: absolute;
-    // top: -110px;
+    top: -110px;
 }
 .home_video {
     position: relative;
