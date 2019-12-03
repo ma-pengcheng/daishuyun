@@ -13,6 +13,7 @@
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.superslide.2.1.1.js"></script>
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>袋鼠云  数据中台  让数据产生价值</title>
 </head>
@@ -83,7 +84,8 @@
         <!-- container 一楼 data_banner 开始 -->
         <div class="data_banner estate_banner">
                 <div class="data_banner_inner estate_banner_inner">
-                    <a href="JavaScript:;">联系我们</a>
+                    <!-- banner跳转form表单 -->
+                    <a href="#data_form">联系我们</a>
                 </div>
         </div>
         <!-- container 一楼 data_banner 结束 -->
@@ -304,7 +306,32 @@
         <!-- container 七楼 data_case 开始 -->
         <div class="data_case">
             <div class="data_case_wrap">
-                    
+                <div class="data_case_title home_title">
+                    <h4>客户案例</h4>
+                </div>
+                   <div class="scroll">
+                       <div class="data_tab">
+                           <span class="current">区域经济大脑</span>
+                           <span>防汛大脑</span>
+                           <span>景区大脑</span>
+                           <span>企业经营大脑</span>
+                           <span>电力物联网</span>
+                           <span>工业大脑</span>
+                           <span>数字图书馆</span>
+                       </div>
+                    <ul class="scroll-img">
+                        <li class="im"><a href="javascript:;"><img src="./picture/v_1.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_2.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_3.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_4.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_5.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_6.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./picture/v_7.jpg" alt=""></a></li>
+                    </ul>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <ul class="pointer"></ul>
+                   </div> 
             </div>
         </div>
         <!-- container 七楼 data_case 结束 -->
@@ -385,7 +412,9 @@
         </div>
         <!-- container 八楼 resource_blog 结束 -->
         <!-- container 九楼form 开始 -->
-        <div class="home_form">
+        <div class="home_form data-item">
+            <!-- banner跳转form的锚点 -->
+            <div class="data_anchor" id="data_form"></div> 
             <div class="wrap">
                 <div class="home_title">
                     <h4>此刻起，让数据产生更大价值</h4>
@@ -536,5 +565,6 @@
     </div>
     <!-- 尾部footer 结束 -->
     <script src="./js/visualization.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 </html>

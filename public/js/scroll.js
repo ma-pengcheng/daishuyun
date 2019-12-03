@@ -6,6 +6,8 @@ var left = document.querySelector(".left");
 var right = document.querySelector(".right");
 var pointer = document.querySelector(".pointer")
 var im = document.querySelector(".im")
+var dataCaseTab = document.querySelector(".data_tab")
+var dataTabs = dataCaseTab.querySelectorAll("span");
 var num = 0; //控制轮播的图片的播放
 var circle = 0; // 控制小圆圈的播放
 var flag = true;//节流阀 控制函数的执行
@@ -44,12 +46,14 @@ scroll.addEventListener("mouseout",function(){
         if(flag){
             flag = false;// 关闭节流阀
             for(var i = 0; i < pointer.children.length; i++){
-                pointer.children[i].className = ""
+                pointer.children[i].className = "";
+                dataTabs[i].className = "";
             }
             //为当前点击的li添加current属性
             this.className = "current";
             // 获取点击事件的li的index属性
             var index = this.getAttribute("index");
+            dataTabs[index].className = "current";
             // 当通过点击小圆圈播放图片时需要实时改变num和circle,为的是可以衔接其他方法的播放
             num = index;
             circle = index;
@@ -92,8 +96,10 @@ right.addEventListener("click",function(){
         }
         for(var i = 0; i < pointer.children.length; i++){
                 pointer.children[i].className = "";
+                dataTabs[i].className = "";
         }
         pointer.children[circle].className = "current";
+        dataTabs[circle].className = "current";
     }   
 })
 
@@ -118,8 +124,10 @@ left.addEventListener("click",function(){
         // 点击左侧按钮，小圆圈根据一起变化
         for(var i = 0; i < pointer.children.length; i++){
             pointer.children[i].className = "";
+            dataTabs[i].className = "";
         }
         pointer.children[circle].className = "current";
+        dataTabs[circle].className = "current";
     } 
 })
  

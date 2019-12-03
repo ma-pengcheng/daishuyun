@@ -282,6 +282,57 @@
   background: url(../picture/data_bj2.jpg) no-repeat center center;
   background-size: cover; }
 
+.data_case .data_case_title.home_title h4 {
+  color: #fff; }
+
+.data_case li img {
+  width: 900px;
+  height: 500px; }
+
+.data_case .scroll {
+  width: 900px;
+  overflow: hidden; }
+
+.data_case .scroll {
+  position: relative;
+  width: 900px;
+  margin: 70px auto; }
+
+.data_case .scroll .data_tab {
+  margin-bottom: 46px; }
+
+.data_case .scroll .data_tab span {
+  display: inline-block;
+  opacity: 1;
+  position: relative;
+  width: auto;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  margin: 0 20px;
+  color: rgba(255, 255, 255, 0.68);
+  background: transparent;
+  cursor: pointer; }
+
+.data_case .data_tab span.current:after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  bottom: 0;
+  margin-left: -14.5px;
+  width: 29px;
+  height: 3px;
+  background: #fff; }
+
+.data_case .scroll .pointer {
+  bottom: 30px; }
+
+.data_case .scroll .left,
+.data_case .scroll .right {
+  top: 60%;
+  opacity: 0.5; }
+
 /* container data_case end*
 /* container resource_blog begin*/
 .resource_blog {
@@ -347,6 +398,10 @@
 
 .blog_table_title span:nth-child(5) {
   margin-left: 153px; }
+
+/* banner跳转form的锚点*/
+#data_form {
+  top: -150px; }
 
 /* container resource_blog end*/
 /* visualization 数据可视化页面 结束*/
