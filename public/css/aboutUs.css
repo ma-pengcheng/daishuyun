@@ -1,0 +1,279 @@
+/* aboutUs page begin*/
+/* about_banner begin*/
+.about_banner {
+  background: url(../picture/about_banner.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+
+.about_banner a {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  left: 50%;
+  bottom: 25%;
+  font-size: 15px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  color: #fff;
+  background: linear-gradient(to right, #6ddead, #16a3ff);
+  cursor: pointer; }
+
+.mask {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.video_promt_box {
+  display: none;
+  position: fixed;
+  top: 170px;
+  left: 650px;
+  width: 600px;
+  height: 417px;
+  background-color: #fff;
+  z-index: 101;
+  padding: 30px; }
+
+.video_close {
+  position: absolute;
+  z-index: 102;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer; }
+
+.video_close img {
+  width: 100%; }
+
+.about_video {
+  height: 360px;
+  width: 540px;
+  object-fit: fill; }
+
+/* about_banner end*/
+/* about_introduction begin */
+.about_introduction {
+  padding: 70px 0; }
+
+.about_introduction_group {
+  margin-top: 70px;
+  padding: 0 80px; }
+
+.about_introduction_left {
+  padding-top: 60px;
+  float: left;
+  width: 455px; }
+
+.about_introduction_map {
+  float: right;
+  width: 461px;
+  height: 321px;
+  overflow: hidden; }
+
+.about_introduction_map img {
+  width: 100%; }
+
+.introduction_group_title {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 15px; }
+
+.introduction_group_text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 26px; }
+
+/* about_introduction end */
+/* about_team begin*/
+.about_team {
+  padding: 70px 0;
+  background: #f5f7fa; }
+
+.about_team_group {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -184px; }
+
+.about_team_item {
+  width: 277px;
+  height: 486px;
+  background-color: #fff;
+  margin: 0 184px 40px 0; }
+
+.about_team_item_img {
+  width: 277px;
+  height: 280px;
+  overflow: hidden; }
+
+.about_team_item_img img {
+  width: 100%; }
+
+.about_team_item_btm {
+  padding: 26px 16px 0; }
+
+.about_team_item_title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 14px; }
+
+.abput_team_item_text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px; }
+
+/* about_team end*/
+/* about_develop begin*/
+.about_develop {
+  padding: 70px 0; }
+
+.about_develop_group {
+  position: relative;
+  margin: 55px 0 0 100px; }
+
+.about_develop_group:after {
+  content: "";
+  position: absolute;
+  left: 438px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e0e0e0; }
+
+.about_develop_item {
+  position: relative;
+  margin-bottom: 50px; }
+
+.develop_item_circle {
+  position: absolute;
+  z-index: 99;
+  left: 428px;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  background: url(../picture/circle.png) no-repeat center center;
+  background-size: 100% 100%; }
+
+.develop_item_img {
+  float: left;
+  width: 357px;
+  height: 130px;
+  overflow: hidden; }
+
+.develop_item_img img {
+  transition: all 0.5s;
+  width: 100%; }
+
+.develop_item_img:hover img {
+  transform: scale(1.1); }
+
+.develop_item_right {
+  float: right;
+  width: 520px;
+  padding-top: 10px;
+  margin-right: 73px; }
+
+.develop_item_date {
+  width: 81px;
+  height: 30px;
+  line-height: 26px;
+  border: 1px solid #2491F7;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #2491F7;
+  text-align: center;
+  margin-bottom: 11px; }
+
+.develop_item_title {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 15px; }
+
+.develop_item_text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px; }
+
+/* about_develop end*/
+/* about_honor begin*/
+.about_honor {
+  padding: 70px 0;
+  background: #f5f7fa; }
+
+.about_honor_group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 65px -20px 0 0; }
+
+.about_honor_item {
+  width: 227px;
+  height: 300px;
+  background-color: #fff;
+  margin: 0 20px 30px 0;
+  overflow: hidden; }
+
+.about_honor_item img {
+  width: 100%; }
+
+/* about_honor end*/
+/* about_news begin*/
+.about_news {
+  padding: 70px 0; }
+
+.about_news_group {
+  margin: 65px -20px 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.about_news_item {
+  width: 487px;
+  height: 142px;
+  margin: 0 20px 20px 0;
+  border: 1px solid #f0f0f0;
+  padding: 20px 15px;
+  transition: all 0.5s; }
+
+.about_news_item:hover {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+
+.about_news_img {
+  float: left;
+  width: 167px;
+  height: 100px;
+  overflow: hidden; }
+
+.about_news_img img {
+  width: 100%; }
+
+.about_news_right {
+  width: 260px;
+  float: right;
+  padding-top: 12px; }
+
+.about_news_item_title {
+  font-size: 16px;
+  color: #333;
+  line-height: 27px;
+  margin-bottom: 17px; }
+
+.about_news_item_date {
+  font-size: 14px;
+  color: #999999; }
+
+/* about_news end*/
+/* aboutUs page end*/
