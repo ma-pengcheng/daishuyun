@@ -40,6 +40,15 @@
   color: rgba(0, 0, 0, 0.65);
   transition: all 0.5s; }
 
+.user_name_box {
+  position: relative; }
+
+#namemsg {
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  color: red; }
+
 .login_box input:hover {
   border: 1px solid #40a9ff; }
 

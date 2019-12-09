@@ -3,7 +3,7 @@ const express = require('express');
 // 引入express中间件body-parser(HTTP请求体解析中间件)
 const bodyParser = require('body-parser');
 // 引入路由器(暂留)
-
+const userRouter = require('./routes/user.js');
 //创建服务器
 let app = express();
 // 利用 body-parser 中间件 解析用户的请求主体
@@ -17,3 +17,4 @@ app.listen(6060,function(){
 // 托管静态资源到public目录下
 app.use(express.static('./public'));
 // 挂载(应用路由)暂留
+app.use('/user', userRouter);
