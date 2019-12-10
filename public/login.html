@@ -23,11 +23,13 @@
             <!-- 加form标签，在点击button提交时，在控制台打印不出来，先去掉 -->
             <!-- <form action=""> -->
                 <div class="user_name_box">
-                    <input type="text" name="" id="user_name" placeholder="请输入用户名" value="">
+                    <input type="text" name="" id="user_name" value="请输入用户名">
                     <span id="namemsg"></span>
                 </div>
-
-                <input type="password" name="" id="user_pwd" placeholder="请输入密码">
+                <div class="user_pwd_box">
+                    <input type="text" name="" id="user_pwd" value="请输入密码">
+                    <span id="pwdmsg"></span>
+                </div>
                 <div class="yz_box">
                     <input type="text" class="yz" placeholder="输入验证码">
                     <img src="./picture/gen-captcha.jpg" class="yz_img">

@@ -40,10 +40,11 @@
     color: rgba(0, 0, 0, 0.65);
     transition: all 0.5s;
 }
-.user_name_box {
+.user_name_box ,
+.user_pwd_box{
     position: relative;
 }
-#namemsg{
+#namemsg,#pwdmsg{
     position: absolute;
     top:45px;
     left:5px;
