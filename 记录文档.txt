@@ -1,0 +1,22 @@
+﻿
+第一页:网站首页			index.html  			1.0.0(2019.11.27)
+
+第二页:数栈页面			dtinsight.html			1.0.1(2019.11.29)
+
+第三页:解决方案页面		solution.html			1.0.0(2019.11.29)
+
+第四页:数据可视化页面		visualization.html              1.0.0(2019.11.30);1.0.1(2019.12.3);1.0.2(2019.12.3)
+
+第五页:合作伙伴			partner.html
+
+第六页:资源中心			resource.html
+
+第七页:关于我们			about.html
+
+第八页:登录页面			login.html
+
+第九页:注册页面			register.html
+
+第十页:重置密码			forget.htmls
+
+第十一页:新闻详情页面		news.html（从某些连接进入为第三级）

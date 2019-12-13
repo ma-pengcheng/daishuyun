@@ -1,0 +1,1054 @@
+
+<!DOCTYPE html>
+<!--
+			   _____  _______  _____  _______         _____  _  __
+              |  __ \|__   __|/ ____||__   __| /\    / ____|| |/ /
+              | |  | |  | |  | (___     | |   /  \  | |     | ' / 
+              | |  | |  | |   \___ \    | |  / /\ \ | |     |  <  
+              | |__| |  | |   ____) |   | | / ____ \| |____ | . \ 
+              |_____/   |_|  |_____/    |_|/_/    \_\\_____||_|\_\
+-->
+<html lang="en">
+<head>
+	<title>袋鼠云  数据中台  让数据产生价值</title>
+    <meta charset="UTF-8" />
+	<meta name="description" content="袋鼠云是国内领先的数据智能践行者，我们始终坚持“让数据产生价值”的使命，研发打造数栈DTinsight企业级一站式数据中台PaaS，在“一切业务数据化”的基础上，帮助客户打通挖掘数据价值，实现“一切数据业务化”。" />
+	<meta name="keywords" content="数据中台,数据可视化,数据可视化大屏,数据可视化工具,企业数字化转型,数据治理,日志分析,企业云服务Cloud-MSP,企业上云,数据库服务,数栈,袋鼠云" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="icon" href="https://www.dtstack.com/wp-content/themes/daishuyun/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.dtstack.com/wp-content/themes/daishuyun/css/base.css">
+    <link rel="stylesheet" href="https://www.dtstack.com/wp-content/themes/daishuyun/css/swiper.min.css">
+    <link rel="stylesheet" href="https://www.dtstack.com/wp-content/themes/daishuyun/css/style.css?v=20191029">
+    
+    <script src="https://www.dtstack.com/wp-content/themes/daishuyun/js/jquery-1.11.1.min.js"></script>
+    <script src="https://www.dtstack.com/wp-content/themes/daishuyun/js/Action.js"></script>
+    <script src="https://www.dtstack.com/wp-content/themes/daishuyun/js/swiper.min.js"></script> 
+    <script src="https://www.dtstack.com/wp-content/themes/daishuyun/js/jquery.SuperSlide.2.1.1.js"></script>
+    <!-- <script src="https://www.dtstack.com/wp-content/themes/daishuyun/js/center.js"></script> -->
+	<script>
+	var  _hmt  =  _hmt  ||  [];
+	(function()  {
+		var  hm  =  document.createElement("script");
+		hm.src  =  "https://hm.baidu.com/hm.js?41349a4302395c1da9b4fb4b38cf3169";
+		var  s  =  document.getElementsByTagName("script")[0];  
+		s.parentNode.insertBefore(hm,  s);
+	})();
+	</script>
+</head> 
+	
+<body>
+
+<!--  PC头部  -->
+<div class="header">
+    <div class="wrap clearfix">
+        <h1 class="logo fl"><a target="_blank" href="https://www.dtstack.com"><img src="https://assets.dtstack.com/2019Website/index/logo.png" alt="数据中台"></a></h1>
+        <div class="nav"><ul id="menu-%e9%a6%96%e9%a1%b5" class="nav-ul"><li id="menu-item-551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-551"><a href="https://www.dtstack.com/">首页</a></li>
+<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://www.dtstack.com/dtinsight/">数栈</a></li>
+<li id="menu-item-675" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-675"><a>解决方案</a>
+<ul class="sub-menu">
+	<li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="https://www.dtstack.com/solution/">数据中台解决方案</a></li>
+	<li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="https://www.dtstack.com/new-retail/">新零售解决方案</a></li>
+	<li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-611"><a href="https://www.dtstack.com/clothing/">鞋服解决方案</a></li>
+	<li id="menu-item-610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-610"><a href="https://www.dtstack.com/dairy/">乳业解决方案</a></li>
+	<li id="menu-item-609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-609"><a href="https://www.dtstack.com/medicine/">医药连锁解决方案</a></li>
+	<li id="menu-item-608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608"><a href="https://www.dtstack.com/group/">综合性集团解决方案</a></li>
+	<li id="menu-item-607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-607"><a href="https://www.dtstack.com/estate/">地产解决方案</a></li>
+</ul>
+</li>
+<li id="menu-item-676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-676"><a>数据可视化</a>
+<ul class="sub-menu">
+	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://www.dtstack.com/visualization/">数据可视化解决方案</a></li>
+	<li id="menu-item-819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.dtstack.com/visualization/economic-brain/">区域经济大脑</a></li>
+	<li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a href="https://www.dtstack.com/visualization/flood-control/">防汛大脑</a></li>
+	<li id="menu-item-817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-817"><a href="https://www.dtstack.com/visualization/scenic-area/">景区大脑</a></li>
+	<li id="menu-item-820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820"><a href="https://www.dtstack.com/visualization/enterprise/">企业经营大脑</a></li>
+	<li id="menu-item-816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-816"><a href="https://www.dtstack.com/visualization/electric-iot/">电力物联网</a></li>
+	<li id="menu-item-815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-815"><a href="https://www.dtstack.com/visualization/industry/">工业大脑</a></li>
+	<li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-814"><a href="https://www.dtstack.com/visualization/digital-library/">数字图书馆</a></li>
+</ul>
+</li>
+<li id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://www.dtstack.com/partner/">合作伙伴</a></li>
+<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-649"><a href="https://www.dtstack.com/resource/">资源中心</a>
+<ul class="sub-menu">
+	<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a href="https://www.dtstack.com/dtcollege/">袋鼠学院</a></li>
+</ul>
+</li>
+<li id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-651"><a href="https://www.dtstack.com/about/">关于我们</a>
+<ul class="sub-menu">
+	<li id="menu-item-2536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2536"><a href="https://www.dtstack.com/category/news/">新闻动态</a></li>
+	<li id="menu-item-3098" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3098"><a href="https://www.dtstack.com/category/trends/">行业资讯</a></li>
+	<li id="menu-item-680" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-680"><a href="https://www.dtstack.com/category/join/">加入我们</a></li>
+	<li id="menu-item-2773" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2773"><a href="https://www.dtsre.com/">云掣科技</a></li>
+</ul>
+</li>
+</ul></div>        <div class="head_right fr">
+            <div class="tel fl"><img src="https://www.dtstack.com/wp-content/themes/daishuyun/images/tel.svg" alt="">400-002-1024</div>
+            <div class="login_box fl">
+                <a target="_blank" href="https://account.dtstack.com/#/login">登录</a>
+                <a target="_blank" href="https://account.dtstack.com/#/register" class="reg_btn">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   移动端头部   -->
+<div class="phone_header">
+    <div class="flex_center">
+        <div class="phone_left"><a target="_blank" href="index.html"><img src="https://www.dtstack.com/wp-content/themes/daishuyun/images/logo.png" alt=""></a></div>
+        <div class="phone_center flex_1"></div>
+        <div class="phone_right menu"><img src="https://www.dtstack.com/wp-content/themes/daishuyun/images/nav_icon.png" alt=""></div>
+    </div>
+</div>
+<div class="container">
+<!--  PC端banner轮播   -->
+<div class="news_banner">
+    <div class="swiper-container side_banner">
+        <div class="swiper-wrapper">
+                                                <div class="swiper-slide" style="background: url(https://www.dtstack.com/wp-content/uploads/2019/10/中原银行.jpg) no-repeat center center;background-size:cover" >
+                <a href="https://www.dtstack.com/3242/" style="width: 100%;height: 100%;display: block;" target="_blank"></a>
+            </div>
+                                                <div class="swiper-slide" style="background: url(https://assets.dtstack.com/2019Website/index/banner/banner2.jpg) no-repeat center center;background-size:cover" >
+                <a href="https://mp.weixin.qq.com/s/b3JlyUXXiFQKxuVK6zWhLw" style="width: 100%;height: 100%;display: block;" target="_blank"></a>
+            </div>
+                                                                                                <div class="swiper-slide" style="background: url(https://assets.dtstack.com/2019Website/index/banner/banner1.jpg) no-repeat center center;background-size:cover" >
+                <a href="https://www.dtstack.com/dtinsight/" style="width: 100%;height: 100%;display: block;" target="_blank"></a>
+            </div>
+                                                                    </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--   移动端banner  -->
+<div class="news_banner_phone">
+				<div class="swiper-slide" style="background: url(https://assets.dtstack.com/2019Website/index/banner/banner_mobile.jpg) no-repeat center center;background-size:cover"></div>
+	<a target="_blank" href="https://www.dtstack.com/dtinsight/"><img src="https://assets.dtstack.com/2019Website/index/banner/banner_mobile.jpg" alt=""></a>
+													</div>
+
+<div class="home_pass">
+    <div class="wrap">
+        <div class="home_title">
+            <h4>数栈：云原生—站式数据中台PaaS</h4>
+            <div class="home_title_text">帮助企业构建数据共享能力中心，实现数据中台落地，加速释放数据价值</div>
+        </div>
+        <div class="home_pass_group home_pass_pc clearfix">
+
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_2.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据开发平台</div>
+                    <div class="home_pass_upper_text">一站式大数据开发平台，快速完全数据中台搭建</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_2_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">离线计算开发套件</div>
+                                <div class="home_pass_drop_text">
+                                     <p>节省80%数据开发时间</p> <p>全链路数据处理</p> <p>兼容开源、商用计算引擎</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_2_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">实时计算开发套件</div>
+                                <div class="home_pass_drop_text">
+                                    <p>金融级流式数据处理自研组件</p> <p>10倍采集性能</p> <p>Flink引擎源码增强</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_3.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据资产平台</div>
+                    <div class="home_pass_upper_text">构建企业数据资产中心，实现数据管理规范化</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据地图</div>
+                                <div class="home_pass_drop_text">
+                                    <p>可视化数据资产中心</p> <p>数据全生命周期可知可管</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据质量</div>
+                                <div class="home_pass_drop_text">
+                                    <p>覆盖90%质量校验场景</p> <p>双表逐行校验保障海量数据一致</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据模型</div>
+                                <div class="home_pass_drop_text">
+                                    <p>构建OneData数据模型</p> <p>快速上手清晰易懂的数据规范</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_1.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据科学平台</div>
+                    <div class="home_pass_upper_text">一站式机器学习作业探索平台，让数据价值触手可及</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">可视化实验建模</div>
+                                <div class="home_pass_drop_text">
+                                    <p>集成丰富的算法组件库</p> <p>拖拉拽方式组成可视化实验流</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">Notebook代码建模</div>
+                                <div class="home_pass_drop_text">
+                                    <p>兼容主流机器学习框架</p>
+<p>在线编辑Python代码</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">模型在线部署</div>
+                                <div class="home_pass_drop_text">
+                                    <p>支持模型离线训练</p> <p>模型在线部署生成API URL</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_4.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据服务引擎</div>
+                    <div class="home_pass_upper_text">提升企业数据共享能力，加速释放数据价值</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据可视化</div>
+                                <div class="home_pass_drop_text">
+                                    <p>让数据价值看得见</p> <p>打造新一代“四有”大屏</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">分析引擎</div>
+                                <div class="home_pass_drop_text">
+                                    <p>百亿数据实现秒级查询多维度</p> <p>高频度复杂分析</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据API</div>
+                                <div class="home_pass_drop_text">
+                                    <p>“0代码”API生成</p> <p>多权限控制保障数据开放安全</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="home_pass_group home_pass_phone clearfix">
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_2.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据开发平台</div>
+                    <div class="home_pass_upper_text">一站式大数据开发平台，快速完全数据中台搭建</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_2_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">离线计算开发套件</div>
+                                <div class="home_pass_drop_text">
+                                     <p>节省80%数据开发时间</p> <p>全链路数据处理</p> <p>兼容开源、商用计算引擎</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_2_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">实时计算开发套件</div>
+                                <div class="home_pass_drop_text">
+                                    <p>金融级流式数据处理自研组件</p> <p>10倍采集性能</p> <p>Flink引擎源码增强</p>                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_3.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据资产平台</div>
+                    <div class="home_pass_upper_text">构建企业数据资产中心，实现数据管理规范化</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据地图</div>
+                                <div class="home_pass_drop_text">
+                                    <p>可视化数据资产中心</p> <p>数据全生命周期可知可管</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据质量</div>
+                                <div class="home_pass_drop_text">
+                                    <p>覆盖90%质量校验场景</p> <p>双表逐行校验保障海量数据一致</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_3_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据模型</div>
+                                <div class="home_pass_drop_text">
+                                    <p>构建OneData数据模型</p> <p>快速上手清晰易懂的数据规范</p>                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_1.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据科学平台</div>
+                    <div class="home_pass_upper_text">一站式机器学习作业探索平台，让数据价值触手可及</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">可视化实验建模</div>
+                                <div class="home_pass_drop_text">
+                                    <p>集成丰富的算法组件库</p> <p>拖拉拽方式组成可视化实验流</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">Notebook代码建模</div>
+                                <div class="home_pass_drop_text">
+                                    <p>兼容主流机器学习框架</p>
+<p>在线编辑Python代码</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_1_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">模型在线部署</div>
+                                <div class="home_pass_drop_text">
+                                    <p>支持模型离线训练</p> <p>模型在线部署生成API URL</p>                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+                        <div class="home_pass_item">
+                <div class="home_pass_upper">
+                    <div class="home_pass_upper_icon"><img src="https://assets.dtstack.com/2019Website/index/product/FirstLevel/icon_4.png" alt=""></div>
+                    <div class="home_pass_upper_title">数据服务引擎</div>
+                    <div class="home_pass_upper_text">提升企业数据共享能力，加速释放数据价值</div>
+                </div>
+                <div class="home_pass_drop">
+                    <div class="home_pass_drop_group">
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_1.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据可视化</div>
+                                <div class="home_pass_drop_text">
+                                    <p>让数据价值看得见</p> <p>打造新一代“四有”大屏</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_2.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">分析引擎</div>
+                                <div class="home_pass_drop_text">
+                                    <p>百亿数据实现秒级查询多维度</p> <p>高频度复杂分析</p>                                </div>
+                            </div>
+                        </div>
+                                                <div class="home_pass_drop_item clearfix">
+                            <div class="home_pass_drop_icon fl"><img src="https://assets.dtstack.com/2019Website/index/product/SecondLevel/shuzhanicon_4_3.png" alt=""></div>
+                            <div class="home_pass_drop_right fl">
+                                <div class="home_pass_drop_title">数据API</div>
+                                <div class="home_pass_drop_text">
+                                    <p>“0代码”API生成</p> <p>多权限控制保障数据开放安全</p>                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+                    </div>
+
+
+        <!-- <div class="home_pass_group home_pass_phone clearfix">
+
+                    </div> -->
+
+
+    </div>
+</div>
+
+
+
+<div class="home_pivot">
+    <div class="home_title">
+        <h4>数据中台：企业数智化转型中枢</h4>
+        <div class="home_title_text">基于阿里巴巴十年数据经验沉淀与分布式数据计算引擎技术， 赋能“互联网+”时代的数据价值思考，助力企业数字化转型，让数据产生价值</div>
+    </div>
+
+    <div class="home_pivot_btm"><img src="https://assets.dtstack.com/2019Website/index/DataMidEnd/PC.png" alt=""></div>
+    <div class="phone_pivot_btm"><img src="https://assets.dtstack.com/2019Website/index/DataMidEnd/mobile.png" alt=""></div>
+</div>
+
+
+<div class="home_case">
+    <div class="wrap">
+        <div class="home_title">
+            <h4>客户案例</h4>
+            <div class="home_title_text"></div>
+        </div>
+    </div>
+    <div class="home_case_group clearfix">
+        <div class="wt_swiper_box">
+            <div class="swiper-container wt_swiper">
+                <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                        <div class="home_case_item">
+                            <div class="home_case_img"><img src="https://assets.dtstack.com/2019Website/index/cases/pic_1.png" alt=""></div>
+                            <div class="home_case_matter">
+                                <div class="matter_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_black_1.png" alt=""></div>
+                                <div class="matter_line"></div>
+                                <div class="matter_title">浙江大学</div>
+                            </div>
+                            <div class="home_case_inside">
+                                <div class="home_case_inside_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_color_1.png" alt=""></div>
+                                <div class="home_case_inside_title">浙江大学</div>
+                                <div class="home_case_inside_line"></div>
+                                <div class="home_case_inside_text">实现高校内部的物理空间、虚拟空间统一，打造“网上浙大”，服务全校师生</div>
+                                <div class="home_case_inside_link"><a target="_blank" href="https://www.dtstack.com/dtinsight/#shuzhan" class="home_case_inside_more">了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="swiper-slide">
+                        <div class="home_case_item">
+                            <div class="home_case_img"><img src="https://assets.dtstack.com/2019Website/index/cases/pic_2.png" alt=""></div>
+                            <div class="home_case_matter">
+                                <div class="matter_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_black_2.png" alt=""></div>
+                                <div class="matter_line"></div>
+                                <div class="matter_title">西溪湿地</div>
+                            </div>
+                            <div class="home_case_inside">
+                                <div class="home_case_inside_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_color_2.png" alt=""></div>
+                                <div class="home_case_inside_title">西溪湿地</div>
+                                <div class="home_case_inside_line"></div>
+                                <div class="home_case_inside_text">打造首个未来景区样板间，实现景区智能管理和数字化运营</div>
+                                <div class="home_case_inside_link"><a target="_blank" href="https://www.dtstack.com/dtinsight/#shuzhan" class="home_case_inside_more">了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="swiper-slide">
+                        <div class="home_case_item">
+                            <div class="home_case_img"><img src="https://assets.dtstack.com/2019Website/index/cases/pic_3.png" alt=""></div>
+                            <div class="home_case_matter">
+                                <div class="matter_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_black_3.png" alt=""></div>
+                                <div class="matter_line"></div>
+                                <div class="matter_title">山西商务厅</div>
+                            </div>
+                            <div class="home_case_inside">
+                                <div class="home_case_inside_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_color_3.png" alt=""></div>
+                                <div class="home_case_inside_title">山西商务厅</div>
+                                <div class="home_case_inside_line"></div>
+                                <div class="home_case_inside_text">为山西省180多万家企业，打造山西商贸流通企业画像，建设商务诚信信用体系</div>
+                                <div class="home_case_inside_link"><a target="_blank" href="https://www.dtstack.com/dtinsight/#shuzhan" class="home_case_inside_more">了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="swiper-slide">
+                        <div class="home_case_item">
+                            <div class="home_case_img"><img src="https://assets.dtstack.com/2019Website/index/cases/pic_4.png" alt=""></div>
+                            <div class="home_case_matter">
+                                <div class="matter_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_black_4.png" alt=""></div>
+                                <div class="matter_line"></div>
+                                <div class="matter_title">杭州互联网法院</div>
+                            </div>
+                            <div class="home_case_inside">
+                                <div class="home_case_inside_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_color_4.png" alt=""></div>
+                                <div class="home_case_inside_title">杭州互联网法院</div>
+                                <div class="home_case_inside_line"></div>
+                                <div class="home_case_inside_text">开庭平均用时和审理期限分别节约了65%和25%</div>
+                                <div class="home_case_inside_link"><a target="_blank" href="https://www.dtstack.com/dtinsight/#shuzhan" class="home_case_inside_more">了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="swiper-slide">
+                        <div class="home_case_item">
+                            <div class="home_case_img"><img src="https://assets.dtstack.com/2019Website/index/cases/pic_5.png" alt=""></div>
+                            <div class="home_case_matter">
+                                <div class="matter_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_black_5.png" alt=""></div>
+                                <div class="matter_line"></div>
+                                <div class="matter_title">中金易云</div>
+                            </div>
+                            <div class="home_case_inside">
+                                <div class="home_case_inside_icon"><img src="https://assets.dtstack.com/2019Website/index/cases/case_icon_color_5.png" alt=""></div>
+                                <div class="home_case_inside_title">中金易云</div>
+                                <div class="home_case_inside_line"></div>
+                                <div class="home_case_inside_text">打通全国1000多家出版机构，20多家发行集团，5000多家门店数据，建立图书行业数据中台</div>
+                                <div class="home_case_inside_link"><a target="_blank" href="https://www.dtstack.com/dtinsight/#shuzhan" class="home_case_inside_more">了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="keep_left"></div>
+                <div class="keep_right"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>                
+    </div>    
+</div>
+
+<div class="home_news">
+    <div class="wrap">
+        <div class="home_title">
+            <h4>新闻动态</h4>
+            <div class="home_title_text"></div>
+        </div>
+
+        <div class="home_news_btm">
+            <div class="home_news_left home_news_item">
+                <div class="home_news_img"><img src="https://assets.dtstack.com/2019Website/index/home_news1.png" alt=""></div><div class="home_news_list">					<a href="https://www.dtstack.com/3373/" target="_blank"><span>[2019-11-12]</span>袋鼠云数据中台专栏V2.0 | 这是一个更懂你心思的图书馆</a>
+										<a href="https://www.dtstack.com/3298/" target="_blank"><span>[2019-10-31]</span>袋鼠云荣获阿里云MSP核心伙伴，携手共建云生态</a>
+										<a href="https://www.dtstack.com/3242/" target="_blank"><span>[2019-10-29]</span>袋鼠云x中原银行达成合作，共同打造一站式金融数据中台PaaS</a>
+										<a href="https://www.dtstack.com/3215/" target="_blank"><span>[2019-10-23]</span>袋鼠云数据中台，赋能烟草营销数智化转型</a>
+					                </div>
+                <div class="home_news_inside">自媒体</div>
+            </div>
+
+            <div class="home_news_center home_news_item">
+                <div class="home_news_img"><img src="https://assets.dtstack.com/2019Website/index/home_news2.png" alt=""></div>
+                <div class="home_news_list">
+                                        <a target="_blank" href="https://36kr.com/p/5245859"><span>[2019-9-12]</span>袋鼠云：从云计算到数据智能 一路跑跳</a>
+                                        <a target="_blank" href="https://www.dtstack.com/0b79cc2078/"><span>[2019-8-22]</span>西湖区科技局领导一行莅临袋鼠云考察交流</a>
+                                        <a target="_blank" href="https://www.dtstack.com/48f3b31fe1/"><span>[2019-7-29]</span>袋鼠云 x 阿里云联合发布鞋服行业智能组货解决方案</a>
+                                        <a target="_blank" href="https://www.dtstack.com/ea7b81903f/"><span>[2018-7-3]</span>袋鼠云荣获2019全国政法智能化建设“智慧法院十大解决方案提供商”</a>
+                                    </div>
+                <div class="home_news_inside">新闻报道</div>
+            </div>
+			
+			<div class="home_news_center home_news_item">
+                <div class="home_news_img"><img src="//assets.dtstack.com/2019Website/index/home_news3.jpg" alt=""></div><div class="home_news_list">					<a href="https://www.dtstack.com/3405/" target="_blank"><span>[2019-11-21]</span>企业数据成倍增长，如何降低管理成本？</a>
+										<a href="https://www.dtstack.com/3403/" target="_blank"><span>[2019-11-21]</span>企业数据是如何挖掘整理的？</a>
+										<a href="https://www.dtstack.com/3401/" target="_blank"><span>[2019-11-20]</span>企业为什么要进行数据化管理？</a>
+										<a href="https://www.dtstack.com/3399/" target="_blank"><span>[2019-11-20]</span>中小企业如何进行数据管理</a>
+					                </div>
+                <div class="home_news_inside">行业资讯</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home_customer">
+    <div class="wrap">
+        <div class="home_title">
+            <h4>合作客户</h4>
+            <div class="home_title_text"></div>
+        </div>
+
+        <div class="home_customer_group clearfix">
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/01.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/02.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/04.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/03.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/05.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/06.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/07.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtops-product.oss-cn-hangzhou.aliyuncs.com/easylog_help/parse-reg/%E8%BF%90%E8%90%A5/Group%2010.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtstack-static.oss-cn-hangzhou.aliyuncs.com/2019Website/index/logo/zyyh.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/10.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/12.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtstack-static.oss-cn-hangzhou.aliyuncs.com/2019Website/index/logo/ksns.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/09.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/15.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtops-product.oss-cn-hangzhou.aliyuncs.com/easylog_help/parse-reg/%E8%BF%90%E8%90%A5/%E5%A4%AA%E5%B9%B3%E6%B4%8B.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/11.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtops-product.oss-cn-hangzhou.aliyuncs.com/easylog_help/parse-reg/%E8%BF%90%E8%90%A5/%E9%95%BF%E6%B1%9F%E8%AF%81%E5%88%B8.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/14.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/16.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtstack-static.oss-cn-hangzhou.aliyuncs.com/2019Website/index/logo/jyzx.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/17.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/18.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/19.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/20.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/21.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/22.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://dtops-product.oss-cn-hangzhou.aliyuncs.com/easylog_help/parse-reg/%E8%BF%90%E8%90%A5/%E8%BE%BE%E6%91%A9%E7%BD%91%E7%BB%9C.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/24.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/25.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/26.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/27.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/28.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/29.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/30.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/31.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/32.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/33.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/34.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/35.png" alt=""></div>
+                        <div class="home_customer_item"><img src="https://assets.dtstack.com/2019Website/index/logo/36.png" alt=""></div>
+                    </div>
+
+        <div class="home_customer_btm"><span class="home_customer_more email_unfold"><img src="https://www.dtstack.com/wp-content/themes/daishuyun/images/drop.png" alt=""></span></div>
+    </div>
+</div>
+
+<a name="contactus">
+    <div class="home_form">
+        <div class="wrap">
+            <div class="home_title">
+                <h4>此刻起，让数据产生更大价值</h4>
+                <div class="home_title_text">填写即可获得免费专家服务和资料下载</div>
+            </div>
+            
+            <div role="form" class="wpcf7" id="wpcf7-f328-o1" lang="zh-CN" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/#wpcf7-f328-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="328" />
+<input type="hidden" name="_wpcf7_version" value="5.1.1" />
+<input type="hidden" name="_wpcf7_locale" value="zh_CN" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f328-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="g-recaptcha-response" value="" />
+</div>
+<div class="home_input_box">
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">公司名称</div>
+<div class="home_input_right fr"><span class="wpcf7-form-control-wrap f1"><input type="text" name="f1" value="" size="40" class="wpcf7-form-control wpcf7-text home_input_text" aria-invalid="false" placeholder="输入公司名称" /></span></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">所在城市</div>
+<div class="home_input_right fr"><span class="wpcf7-form-control-wrap f5"><input type="text" name="f5" value="" size="40" class="wpcf7-form-control wpcf7-text home_input_text" aria-invalid="false" placeholder="输入所在城市" /></span></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">所属行业</div>
+<div class="home_input_right fr"><span class="wpcf7-form-control-wrap f3"><input type="text" name="f3" value="" size="40" class="wpcf7-form-control wpcf7-text home_input_text" aria-invalid="false" placeholder="输入所属行业" /></span></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">姓名</div>
+<div class="home_input_right fr"><span class="wpcf7-form-control-wrap f2"><input type="text" name="f2" value="" size="40" class="wpcf7-form-control wpcf7-text home_input_text" aria-invalid="false" placeholder="输入您的姓名" /></span></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">电话</div>
+<div class="home_input_right fr"><span class="wpcf7-form-control-wrap f4"><input type="text" name="f4" value="" size="40" class="wpcf7-form-control wpcf7-text home_input_text" aria-invalid="false" placeholder="输入联系电话" /></span></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">我想要</div>
+<div class="home_input_right fr">
+<div class="home_check_box" style="white-space:nowrap">
+<span class="wpcf7-form-control-wrap radio-220"><span class="wpcf7-form-control wpcf7-radio home_input_check"><span class="wpcf7-list-item first"><label><input type="radio" name="radio-220" value="&nbsp;数据中台解决方案" checked="checked" /><span class="wpcf7-list-item-label">&nbsp;数据中台解决方案</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="radio-220" value="&nbsp;数栈" /><span class="wpcf7-list-item-label">&nbsp;数栈</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="radio-220" value="&nbsp;数据可视化大屏" /><span class="wpcf7-list-item-label">&nbsp;数据可视化大屏</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="radio-220" value="&nbsp;成为合作伙伴" /><span class="wpcf7-list-item-label">&nbsp;成为合作伙伴</span></label></span></span></span>
+                        </div>
+</p></div>
+</p></div>
+<div class="home_input_list clearfix">
+<div class="home_input_left fl">其他需求</div>
+<div class="home_input_right fr">
+<span class="wpcf7-form-control-wrap textarea-220"><textarea name="textarea-220" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea home_input_area" aria-invalid="false" placeholder="输入问题描述"></textarea></span>
+                    </div>
+</p></div>
+<div class="home_input_btm clearfix">
+<div class="home_input_right fr">
+<input type="submit" value="提交问题" class="wpcf7-form-control wpcf7-submit input_btn" />
+                    </div>
+</p></div>
+</p></div>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>        </div>  
+    </div>
+</a>
+
+
+<script>
+$(function(){
+    //banner轮播
+    var swiper = new Swiper('.side_banner', {
+      loop:true,
+      speed:500,
+      // grabCursor : true,
+      autoplay:{
+        delay: 5000,
+        // disableOnInteraction: false,
+      },
+      // autoplay : false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+
+    //展开更多
+    var windowWidth=$(window).width();
+    if(windowWidth>1000){
+         $(".home_customer_group").find(".home_customer_item:gt(15)").hide();
+         $(".home_customer_more").on("click",function(){
+             if($(this).hasClass("email_unfold")){
+                $(".home_customer_item:gt(15)").fadeIn();
+                $(this).removeClass("email_unfold")
+                $(this).addClass("current")
+             }
+             else {
+                $(".home_customer_item:gt(15)").fadeOut();
+                $(this).addClass("email_unfold")
+                $(this).removeClass("current")
+             }
+
+         })     
+    }
+    else {
+        $(".home_customer_group").find(".home_customer_item:gt(7)").hide();
+        $(".home_customer_more").on("click",function(){
+             if($(this).hasClass("email_unfold")){
+                $(".home_customer_item:gt(7)").fadeIn();
+                $(this).removeClass("email_unfold")
+                $(this).addClass("current")
+             }
+             else {
+                $(".home_customer_item:gt(7)").fadeOut();
+                $(this).addClass("email_unfold")
+                $(this).removeClass("current")
+             }
+
+        })
+    }
+
+
+    //轮播
+    mySwiper1()
+    function mySwiper1()   {
+        var windowWidth=$(window).width();
+//         console.log(windowWidth)
+        if(windowWidth>1200){
+            var mySwiper1 = new Swiper ('.wt_swiper_box .wt_swiper', {
+                loop:true,
+                slidesPerView: 5,
+                spaceBetween: 0,
+                observer:true,
+                observeParents:true,
+                paginationClickable: true,
+                autoplayDisableOnInteraction:false,
+                preventLinksPropagation:true,
+                navigation: {
+                  nextEl: '.wt_swiper_box .swiper-button-next',
+                  prevEl: '.wt_swiper_box .swiper-button-prev',
+                }   
+            })    
+        }
+        else {
+            var mySwiper1 = new Swiper ('.wt_swiper_box .wt_swiper', {
+                loop:true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                observer:true,
+                observeParents:true,
+                paginationClickable: true,
+                autoplayDisableOnInteraction:false,
+                preventLinksPropagation:true,
+                navigation: {
+                  nextEl: '.wt_swiper_box .swiper-button-next',
+                  prevEl: '.wt_swiper_box .swiper-button-prev',
+                }     
+            })    
+        }    
+    } 
+    
+
+    //修改
+    $(".swiper-slide-active").next().next().find(".home_case_item").addClass("current") 
+    $(".home_case_item").hover(function(){
+        $(this).addClass("current").parents(".swiper-slide").siblings().find(".home_case_item").removeClass("current") 
+    })
+
+
+    $(".wt_swiper_box .swiper-button-next").on("click",function(){
+         $(".home_case_item").removeClass("current") 
+         $(".swiper-slide-active").next().next().find(".home_case_item").addClass("current") 
+    })
+    $(".wt_swiper_box .swiper-button-prev").on("click",function(){
+        $(".home_case_item").removeClass("current") 
+         $(".swiper-slide-active").next().next().find(".home_case_item").addClass("current") 
+    })
+
+})
+</script>
+</div>
+<div class="footer" style="margin-top:40px">
+    <div class="wrap">
+        <div class="foot_top clearfix">
+            <div class="foot_top_left fl">
+                <div class="foot_list_group clearfix">
+                    <div class="foot_list">
+                        <div class="foot_list_title">关于我们</div>
+                        <div class="foot_list_btm">
+                                                        <a target="_blank" href="https://www.dtstack.com/about/">品牌文化 </a>
+                                                        <a target="_blank" href="https://www.dtstack.com/category/join/">加入我们 </a>
+                                                        <a target="_blank" href="https://www.dtstack.com/category/news/">新闻动态 </a>
+                                                        <a target="_blank" href="https://www.dtstack.com/new-retail/#contactus">联系我们</a>
+                            
+                        </div>
+                    </div>
+                    <div class="foot_list">
+                        <div class="foot_list_title">热门产品</div>
+                        <div class="foot_list_btm">
+                                                        <a target="_blank" href="https://www.dtstack.com/dtinsight">数栈PaaS</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/visualization/">数据可视化</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/dtinsight">数据开发平台</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/dtinsight">数据资产平台</a>
+                                                    </div>
+                    </div>
+                    <div class="foot_list">
+                        <div class="foot_list_title">解决方案</div>
+                        <div class="foot_list_btm">
+                                                        <a target="_blank" href="https://www.dtstack.com/dtinsight/">银行大数据</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/clothing/">鞋服大数据</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/estate/">地产大数据</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/visualization/scenic-area/">数字景区</a>
+                                                    </div>
+                    </div>
+                    <div class="foot_list">
+                        <div class="foot_list_title">快速入口</div>
+                        <div class="foot_list_btm">
+                                                        <a target="_blank" href="https://account.dtstack.com/#/register">免费注册</a>
+                                                        <a target="_blank" href="https://account.dtstack.com/#/login">立即登录</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/dtcollege/">袋鼠学院</a>
+                                                        <a target="_blank" href="https://www.dtstack.com/resource/">资源中心</a>
+                                                    </div>
+                    </div>
+                    <div class="foot_list foot_contact">
+                        <div class="foot_list_title">联系我们</div>
+                        <div class="foot_contact_btm">
+                                                        <p>售后服务 service@dtstack.com  </p>
+                                                        <p>商务合作 support@dtstack.com  </p>
+                                                        <p>联系电话 400-002-1024  </p>
+                                                        <p>总部地址 杭州西湖区紫霞街互联网创新创业园B座8楼</p>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="foot_hot clearfix">
+                    <div class="foot_hot_left fl">热门搜索</div>
+                    <div class="foot_hot_right fl">
+                                                    <a target="_blank" href="https://www.dtstack.com/solution/">数据中台  </a>
+                                                    <a target="_blank" href="https://www.dtstack.com/dtinsight">数栈</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/visualization/">数据大屏</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/solution/">数字化转型</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/dtinsight">金融</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/clothing/">鞋服</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/estate/">地产</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/visualization/">数字大脑</a>
+                                                    <a target="_blank" href="https://www.dtstack.com/visualization/economic-brain/">区域经济大脑 </a>
+                                                    <a target="_blank" href="https://www.dtstack.com/dtinsight">数字教育 </a>
+                                                    <a target="_blank" href="https://www.dtstack.com/visualization/scenic-area/">数字景区 </a>
+                                                    <a target="_blank" href="https://www.dtsre.com">云MSP</a>
+                                                    <a target="_blank" href="https://www.dtsre.com">EasyLog</a>
+                                                    <a target="_blank" href="https://www.dtsre.com">日志分析</a>
+                                                    <a target="_blank" href="https://www.dtsre.com">EasyDB</a>
+                                                    <a target="_blank" href="https://www.dtsre.com">CloudDBA</a>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="foot_top_right fr">
+                <div class="foot_code clearfix">
+                    <div class="foot_code_item fl">
+                                                <div class="foot_code_img"><img src="https://assets.dtstack.com/homepage/foot_qr_weixin.jpg" alt=""></div>
+                        <div class="foot_code_text">扫一扫关注公众号</div>
+                                            </div>
+                    <div class="foot_code_item fr">
+                                                <div class="foot_code_img"><img src="https://assets.dtstack.com/2019Website/index/foot/weixin2.jpg" alt=""></div>
+                        <div class="foot_code_text">袋鼠云技术团队公众号</div>
+                                            </div>
+                </div>
+                <div class="foot_share clearfix">
+                                        <a target="_blank" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E8%A2%8B%E9%BC%A0%E4%BA%91%20&oq=%25E8%25A2%258B%25E9%25BC%25A0%25E4%25BA%2591&rsv_pq=9f38d19f00029893&rsv_t=384aNvt4%2FBe4gTkflvy8LPZiRsDRG3O1336pk5Z59LvVqXNIMr1BaOGNfX0&rqlang=cn&rsv_enter=0&rsv_sug=1" rel="nofollow"><img src="https://assets.dtstack.com/2019Website/index/foot/foot_icon1.png" alt=""></a>
+                                        <a target="_blank" href="https://www.jianshu.com/u/3fa4bcb8aa45" rel="nofollow"><img src="https://assets.dtstack.com/2019Website/index/foot/foot_icon2.png" alt=""></a>
+                                        <a target="_blank" href="https://www.zhihu.com/org/dai-shu-yun-68/activities" rel="nofollow"><img src="https://assets.dtstack.com/2019Website/index/foot/foot_icon3.png" alt=""></a>
+                                        <a target="_blank" href="https://yq.aliyun.com/users/p2sigtrij3o3q?spm=a2c4e.11163080.searchblog.21.4ac82ec1kEB2Mr" rel="nofollow"><img src="https://assets.dtstack.com/2019Website/index/foot/foot_icon4.png" alt=""></a>
+                                    </div>
+            </div>
+        </div>
+
+        <div class="foot_btm">
+			<p>
+                友情链接：
+                                <a target="_blank" href="https://www.aliyun.com" rel="nofollow">阿里云</a>
+                <span>|</span>
+                                <a target="_blank" href="https://www.dtsre.com" rel="nofollow">云掣科技</a>
+                <span>|</span>
+                                <a target="_blank" href="https://www.uyun.cn/" rel="nofollow">优云运维</a>
+                <span>|</span>
+                                <a target="_blank" href="http://www.olm.com.cn/" rel="nofollow">东方龙马</a>
+                <span>|</span>
+                                <a target="_blank" href="https://www.moresec.cn/" rel="nofollow">默安科技</a>
+                <span>|</span>
+                            </p>
+            <p>@Copyrights 2016-2019 杭州玳数科技有限公司 浙ICP备15044486号-1</p>
+        </div>
+    </div>
+</div>
+ 
+
+<!-- 移动端侧边导航  -->
+<div class="phone_nav">
+  <div class="phone_mask"></div>
+  <div class="phone_nav_right"><ul id="menu-%e9%a6%96%e9%a1%b5-1" class="phone_nav_list"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-551"><a href="https://www.dtstack.com/">首页</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://www.dtstack.com/dtinsight/">数栈</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-675"><a>解决方案</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="https://www.dtstack.com/solution/">数据中台解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="https://www.dtstack.com/new-retail/">新零售解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-611"><a href="https://www.dtstack.com/clothing/">鞋服解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-610"><a href="https://www.dtstack.com/dairy/">乳业解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-609"><a href="https://www.dtstack.com/medicine/">医药连锁解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608"><a href="https://www.dtstack.com/group/">综合性集团解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-607"><a href="https://www.dtstack.com/estate/">地产解决方案</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-676"><a>数据可视化</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://www.dtstack.com/visualization/">数据可视化解决方案</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.dtstack.com/visualization/economic-brain/">区域经济大脑</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a href="https://www.dtstack.com/visualization/flood-control/">防汛大脑</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-817"><a href="https://www.dtstack.com/visualization/scenic-area/">景区大脑</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820"><a href="https://www.dtstack.com/visualization/enterprise/">企业经营大脑</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-816"><a href="https://www.dtstack.com/visualization/electric-iot/">电力物联网</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-815"><a href="https://www.dtstack.com/visualization/industry/">工业大脑</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-814"><a href="https://www.dtstack.com/visualization/digital-library/">数字图书馆</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://www.dtstack.com/partner/">合作伙伴</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-649"><a href="https://www.dtstack.com/resource/">资源中心</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a href="https://www.dtstack.com/dtcollege/">袋鼠学院</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-651"><a href="https://www.dtstack.com/about/">关于我们</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2536"><a href="https://www.dtstack.com/category/news/">新闻动态</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3098"><a href="https://www.dtstack.com/category/trends/">行业资讯</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-680"><a href="https://www.dtstack.com/category/join/">加入我们</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2773"><a href="https://www.dtsre.com/">云掣科技</a></li>
+</ul>
+</li>
+</ul></div></div>
+<style type="text/css">
+    .phone_nav_list>li{
+        position: relative;
+    }
+    .phone_nav_list>li span{
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        display: inline-block;
+        background: url(https://www.dtstack.com/wp-content/themes/daishuyun/images/nav-phone-b.png) 50% 50%;
+        /*background-size: 50% 50%;*/
+        width: 24px;
+        height: 24px;
+        transform: rotate(0deg);
+        transition: 0.3s;
+        /*scale:0.5;*/
+    }
+    .phone_nav_list>li>ul{
+        padding: 15px 0;
+        background: #F5F5F5;
+        height: 0;
+        overflow: hidden;
+        display: none;
+    }
+    .phone_nav_list>li>ul>li>a{
+        display: block;
+        font-size: 15px;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        color: #666666;
+        background: #f5f5f5;
+        transition: 0.2s;
+        
+    }
+    .phone_nav_list>li span.current{
+        transform: rotate(90deg);
+        transition: 0.3s;
+    }
+</style>
+<script type="text/javascript">
+$(function(){
+    $('.phone_nav_list>li').each(function(index){
+        if($(this).children().length >1){
+            $(this).append("<span></span>");
+        }
+    })
+
+    $('.phone_nav_list>li span').on('click',function(){
+        if($(this).hasClass('current')){
+            $(this).removeClass('current');
+            $(this).prev().height('0').css('display','none');
+        } else {
+            $(this).addClass('current');
+            $(this).prev().css('display','block').height('auto');
+        }
+
+    })
+});
+$(function() {
+	$('a').each(function(i) {
+		var href = ($(this).attr('href') || '').toLowerCase();
+		if(href.indexOf('dtstack.com') !== -1) {
+			$(this).attr('target', '_self');
+		}else {
+			if(href.indexOf('#') == 0) {
+				$(this).removeAttr('target');
+			}
+			else {
+				$(this).attr('target', '_blank');
+			}
+		}
+	})
+});
+</script>
+</body>
+</html>

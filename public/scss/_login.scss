@@ -1,0 +1,80 @@
+/*登录页面 开始*/ 
+.login_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+.login_box {
+    width: 410px;
+    height: 420px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 46px 61px;
+}
+.login_title {
+    font-family: PingFangSC-Regular;
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login_box input {
+    
+    width: 320px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border: none;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    list-style: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.65);
+    transition: all 0.5s;
+}
+.user_name_box ,
+.user_pwd_box{
+    position: relative;
+}
+#namemsg,#pwdmsg{
+    position: absolute;
+    top:45px;
+    left:5px;
+    color: red;
+}
+.login_box input:hover {
+    border:1px solid #40a9ff;
+}
+.login_box button {
+    width: 320px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #40a9ff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+.login_box .yz_box input {
+    width: 210px;
+}
+.login_box .yz_box img {
+    cursor: pointer;
+}
+.forget {
+    color: #999;
+}
+.login_register {
+    color: #40a9ff;
+    float: right;
+}
+/*登录页面 结束*/ 
