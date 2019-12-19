@@ -2390,8 +2390,8 @@
   width: 100%; }
 
 .register_box {
-  width: 700px;
-  height: 640px;
+  width: 800px;
+  height: 680px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
   position: fixed;
@@ -2430,6 +2430,9 @@
   color: rgba(0, 0, 0, 0.65);
   transition: all 0.5s; }
 
+.register_box input:hover {
+  border: 1px solid #40a9ff; }
+
 .register_box button {
   width: 370px;
   height: 40px;
@@ -2456,10 +2459,48 @@
 
 .register_box .notice {
   text-align: left;
-  margin-left: 165px; }
+  margin-left: 214px; }
 
 .register_box .notice a {
   color: #40a9ff; }
+
+.text_box {
+  position: relative; }
+
+.vali_info {
+  display: none;
+  width: 200px;
+  text-align: left;
+  padding-left: 28px;
+  top: 11px;
+  right: 15px;
+  position: absolute;
+  color: red; }
+
+.must {
+  position: absolute;
+  right: 200px;
+  top: 12px;
+  color: red;
+  font-size: 16px; }
+
+.success {
+  display: block;
+  top: 14px;
+  right: 170px;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url(../images/ok.png) no-repeat left top; }
+
+.fail {
+  display: block;
+  top: 14px;
+  right: 170px;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url(../images/err.png) no-repeat left top; }
 
 /* 注册页面结束 */
 /* 新闻详情页面 开始*/

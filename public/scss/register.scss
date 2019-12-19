@@ -1,5 +1,4 @@
-/* 注册页面开始 */
-
+/* 注册页面开始 */ 
 .register_header {
     position: fixed;
     width: 100%;
@@ -7,19 +6,17 @@
     background-color: #2E3943;
     padding: 0 40px;
 }
-
 .register_logo {
     position: absolute;
     width: 100px;
     height: 30px;
-    margin: 10px 0;
+    margin:10px 0;
     color: rgba(0, 0, 0, 0.65);
 }
-
 .register_logo img {
     width: 100%;
+    
 }
-
 .register_home {
     position: absolute;
     right: 40px;
@@ -27,14 +24,12 @@
     width: 20px;
     height: 20px;
 }
-
 .register_home img {
     width: 100%;
 }
-
 .register_box {
-    width: 800px;
-    height: 680px;
+    width: 700px;
+    height: 640px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
     position: fixed;
@@ -44,44 +39,35 @@
     box-sizing: border-box;
     text-align: center;
 }
-
 .register_outlink {
     width: 100%;
     height: 20px;
-    margin: 20px 0 14px;
+    margin:20px 0 14px;
     line-height: 20px;
     font-size: 14px;
     padding-right: 20px;
 }
-
 .register_outlink a,
 .register_outlink span {
     float: right;
 }
-
 .register_outlink a {
     margin-left: 5px;
     color: #40a9ff;
 }
-
 .register_box input {
     width: 370px;
     height: 40px;
     margin-bottom: 25px;
     padding-left: 10px;
     border: none;
-    border: 1px solid #ccc;
+    border:1px solid #ccc;
     border-radius: 4px;
     list-style: none;
     outline: none;
     color: rgba(0, 0, 0, 0.65);
     transition: all 0.5s;
 }
-
-.register_box input:hover {
-    border: 1px solid #40a9ff;
-}
-
 .register_box button {
     width: 370px;
     height: 40px;
@@ -93,11 +79,9 @@
     cursor: pointer;
     margin-bottom: 12px;
 }
-
 .register_yz_box input {
     width: 260px;
 }
-
 .register_yz_box button {
     width: 100px;
     height: 40px;
@@ -108,58 +92,11 @@
     font-size: 14px;
     border: 1px solid #ccc;
 }
-
 .register_box .notice {
     text-align: left;
-    margin-left: 214px;
+    margin-left: 165px;
 }
-
 .register_box .notice a {
     color: #40a9ff;
 }
-
-.text_box {
-    position: relative;
-}
-
-.vali_info {
-    display: none;
-    width: 200px;
-    text-align: left;
-    padding-left: 28px;
-    top: 11px;
-    right: 15px;
-    position: absolute;
-    color: red;
-}
-
-.must {
-    position: absolute;
-    right: 200px;
-    top: 12px;
-    color: red;
-    font-size: 16px;
-}
-
-.success {
-    display: block;
-    top: 14px;
-    right: 170px;
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background: url(../images/ok.png) no-repeat left top;
-}
-
-.fail {
-    display: block;
-    top: 14px;
-    right: 170px;
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background: url(../images/err.png) no-repeat left top;
-}
-
-
-/* 注册页面结束 */
+/* 注册页面结束 */ 
