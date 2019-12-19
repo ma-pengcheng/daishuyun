@@ -1,0 +1,100 @@
+/*合作伙伴页面 开始*/
+/* banner begin*/
+ .partner_banner {
+    background: url(../picture/partner_banner.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+ }
+ .partner_banner a {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    left: 50%;
+    bottom: 19%;
+    font-size: 15px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    color: #fff;
+    transition: all 0.8s;
+    background: linear-gradient(to right, #6ddead, #16a3ff);
+ }
+/* banner end*/
+/* equity begin*/
+.partner_equity{
+   padding: 70px 0;
+}
+.partner_equity_group,
+.partners_type_group {
+   margin-top: 70px;
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+}
+.equity_item,
+.partners_type_item {
+   width: 290px;
+   height: 250px;
+   padding:0 35px;
+   text-align: center;
+}
+.equity_item .equity_item_icon,
+.partners_type_item .partner_item_icon {
+   width: 110px;
+   margin: 0 auto 24px;
+}
+.equity_item .equity_item_icon img,
+.partners_type_item .partner_item_icon img {
+   width: 100%;
+}
+.equity_item_title,
+.partner_item_title {
+   font-size: 16px;
+   color: #333333;
+   margin-bottom: 18px;
+   font-weight: bold;
+}
+.equity_item_text,
+.partner_item_text {
+   font-size: 14px;
+   color: #666666;
+   line-height: 20px;
+}
+/* equity end*/ 
+/* partners_type begin 部分样式在上面分组 */
+.partners_type {
+   padding: 70px 0;
+   background: #f5f7fa;
+}
+.partners_type_item .partner_item_icon {
+   border-radius: 50%;
+   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+/* partners_type end */  
+/* partners_tactic begin */
+.partners_tactic {
+   padding: 70px 0;
+}
+.partners_tactic_group {
+   margin-top: 70px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.partners_tactic_item {
+   width: 282px;
+   height: 140px;
+   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+   margin-bottom: 40px;
+   overflow: hidden;
+}
+.partners_tactic_item img {
+   width: 100%;
+}
+/* partners_tactic end*/  
+/*合作伙伴页面 结束*/ 
