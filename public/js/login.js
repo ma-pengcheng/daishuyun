@@ -81,7 +81,17 @@ window.onload = function(){
         }
 
     }
+<<<<<<< HEAD
     // 提交按钮单击事件
+=======
+<<<<<<< HEAD
+    // 提交按钮单击事件
+=======
+
+    // 提交按钮单击事件
+
+>>>>>>> 7dc9d03e9f91014cb20420db341ab252d4c2994c
+>>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     loginBtn.addEventListener("click",function(){
         // 正则验证 六位以上数字和大小写字母及._的组合,但是只能以数字或字母开头
         var userPwdReg = new RegExp(/^[a-zA-Z0-9]{1}([a-zA-Z0-9]|[._]){5,19}$/);
