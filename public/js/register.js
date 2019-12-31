@@ -8,10 +8,7 @@ window.onload = function() {
     var regBtn = document.querySelector("#reg_btn");
     var mustInfo = document.querySelector(".text_box>.must")
     var inputs = document.querySelectorAll(".register_box input");
-<<<<<<< HEAD
     var unameMsg = document.querySelector(".uname_msg");
-=======
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     // 2.获得焦点的验证函数
     function Hvali(element, value, info) {
         if (element.value === value) {
@@ -40,18 +37,18 @@ window.onload = function() {
     }
     // 4.姓名输入框验证
     regUname.onfocus = function() {
-        Hvali(regUname, "设置登录姓名", "2~10位汉字与大小字母的组合");
+        Hvali(regUname, "请设置登录姓名", "2~10位汉字与大小字母的组合");
     }
     regUname.onblur = function() {
-<<<<<<< HEAD
         // 正则验证在验证服务器上没有这个名字才开始验证
-            searchName()    
-=======
-            var regNameReg = new RegExp(/^[A-Za-z_\u4e00-\u9fa5]{2,10}$/);
-            Svali(regUname, regNameReg, "设置登录姓名");
-            // searchName();
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
-        }
+        if(regUname.value === ""){
+            regUname.value = "请设置登录姓名";
+            regUname.nextElementSibling.className = "fail";
+            regUname.nextElementSibling.innerHTML = "";
+        }else{
+            searchName() 
+        }       
+    }
     // 5.手机输入框验证
     regPhone.onfocus = function() {
         Hvali(regPhone, "请输入手机号", "11位的合法手机号码")
@@ -60,17 +57,21 @@ window.onload = function() {
             var regPhoneReg = new RegExp(/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/);
             Svali(regPhone, regPhoneReg, "请输入手机号")
         }
-<<<<<<< HEAD
     // 6.密码输入框验证
-=======
-        // 6.密码输入框验证
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     regPwd.onfocus = function() {
+        regPwd.type = "password";
         Hvali(regPwd, "请设置密码", "6~20位数字与大小字母组合")
     }
     regPwd.onblur = function() {
             var regPwdReg = new RegExp(/^[a-zA-Z0-9]{1}([a-zA-Z0-9]|[._]){5,19}$/);
-            Svali(regPwd, regPwdReg, "请设置密码")
+            if(regPwd.value === ""){
+                regPwd.type = "text";
+                regPwd.value = "请设置密码";
+                regPwd.nextElementSibling.className = "fail";
+                regPwd.nextElementSibling.innerHTML = "";
+            }else{
+                Svali(regPwd, regPwdReg, "请设置密码")
+            }
         }
         // 7.邮箱输入框验证
     regEmail.onfocus = function() {
@@ -91,10 +92,7 @@ window.onload = function() {
     }
 
     // ajax请求
-<<<<<<< HEAD
     // 1.用户名输入框失去焦点时，向后台验证，该用户名是否存在
-=======
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     function searchName() {
         var $uname = regUname.value;
         var xhr = new XMLHttpRequest();
@@ -102,12 +100,11 @@ window.onload = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var result = xhr.responseText;
                 if (result == 1) {
-<<<<<<< HEAD
                     unameMsg.innerHTML = "用户名已存在！"
                 };
                 if(result == 0){
                     var regNameReg = new RegExp(/^[A-Za-z_\u4e00-\u9fa5]{2,10}$/);
-                    Svali(regUname, regNameReg, "设置登录姓名");
+                    Svali(regUname, regNameReg, "请设置登录姓名");
                 }
             }
         }
@@ -115,16 +112,6 @@ window.onload = function() {
         xhr.send();
     }
     // 2.注册用户(向后台提交验证)
-=======
-                    name_msg.innerHTML = "用户名已存在！"
-                }
-            }
-        }
-        xhr.open("get", "/pro/v1/getUser/" + $uname, true);
-        xhr.send();
-    }
-    // 注册用户
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     function regUser() {
         var $uname = regUname.value;
         var $upwd = regPwd.value;
@@ -135,17 +122,10 @@ window.onload = function() {
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var result = xhr.responseText;
-<<<<<<< HEAD
                 if (result == 1) {
                     // 注册成功后带参传递
                    var uname =  formdata.split("&")[1].split("=")[1];
                     window.location.href = "index.html?uname=" + uname;
-=======
-                console.log(1)
-                if (result == 1) {
-                    console.log(1)
-                    // window.location.href = "index.html"
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
                 };
                 if (result == 0) {
                     alert("注册失败！");
@@ -158,24 +138,16 @@ window.onload = function() {
         // 创建请求主体
         var formdata = "uid=" + null + "&uname=" + $uname + "&upwd=" + $upwd + "&email=" + $email + "&phone=" + $phone + "&company=" + $company;
         // 发送请求主体
-<<<<<<< HEAD
         xhr.send(formdata);
     }
     regBtn.onclick = function() {
         // 检查此时.register_box的后代是否具有.fail类名的元素(说明添加的消息不符合规范)
         var fail = document.querySelectorAll(".register_box .fail");
-        // 如果不存在提交注册
+        // 如果不存再提交注册
         if(fail.length === 0){
             regUser();
         }else{ // 如果存在弹出警示框
             alert("请检查注册信息是否全部正确！")
         }   
-=======
-        console.log(formdata);
-        xhr.send(formdata);
-    }
-    regBtn.onclick = function() {
-        regUser();
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     }
 }

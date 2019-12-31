@@ -50,6 +50,12 @@
     left:5px;
     color: red;
 }
+.user_name_box>.login_name_success {
+    position: absolute;
+    display: inline-block;
+    right:-28px;
+    top:12px;
+}
 .login_box input:hover {
     border:1px solid #40a9ff;
 }

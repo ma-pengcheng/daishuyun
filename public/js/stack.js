@@ -28,8 +28,6 @@ for(var i = 0;i < tabItem.length;i++){
         faqGroup[Tabindex].style.display = "block";
     })
 }
-
-
 var flag = true;
 for(var i = 0; i < faqIcon.length;i++){
     faqIcon[i].setAttribute("index",i);
@@ -52,7 +50,6 @@ for(var i = 0; i < faqIcon.length;i++){
         
     })
 }
-
 // 客户案例板块的切换 (前两个部分功能)
 // 获取元素
  var clientList = document.querySelector(".client_list")

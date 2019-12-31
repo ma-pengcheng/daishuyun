@@ -5,7 +5,7 @@ window.onload = function(){
     var loginBtn = document.querySelector("#login_btn");
     var nameMsg = document.querySelector("#namemsg");
     var pwdMsg = document.querySelector("#pwdmsg");
-
+    var loginNameSu = document.querySelector(".login_name_success")
     // 用户名输入框
     // 用户名输入框失去焦点后(默认用户完成输入),开始正则验证和后台验证
     userName.onblur = function(){
@@ -14,11 +14,12 @@ window.onload = function(){
             userName.value = "请输入用户名";
             nameMsg.innerHTML = "";
             userName.style.borderColor = "#ccc";
+            loginNameSu.className = "";
             return;
         }
         // 正则
         // 只能是汉字与大小字母及_的组合
-        var userNameReg = new RegExp(/^[A-Za-z_\u4e00-\u9fa5]{3,10}$/);
+        var userNameReg = new RegExp(/^[A-Za-z_\u4e00-\u9fa5]{2,10}$/);
         var bool = userNameReg.test(userName.value);
         // 开始正则验证
         if(bool){
@@ -32,6 +33,7 @@ window.onload = function(){
                     var result = xhr.responseText;
                     // 数据库中如果存在该用户名则默认用户可以继续向下填写密码
                     if(result == 1){
+                        loginNameSu.className = "login_name_success success";
                         return;
                     };
                     // 数据库中如果不存在该用户，则在页面显示给用户错误的信息
@@ -81,17 +83,7 @@ window.onload = function(){
         }
 
     }
-<<<<<<< HEAD
     // 提交按钮单击事件
-=======
-<<<<<<< HEAD
-    // 提交按钮单击事件
-=======
-
-    // 提交按钮单击事件
-
->>>>>>> 7dc9d03e9f91014cb20420db341ab252d4c2994c
->>>>>>> ec6dcfc288fd6aaf8b55a8cfef44991cb03a84f1
     loginBtn.addEventListener("click",function(){
         // 正则验证 六位以上数字和大小写字母及._的组合,但是只能以数字或字母开头
         var userPwdReg = new RegExp(/^[a-zA-Z0-9]{1}([a-zA-Z0-9]|[._]){5,19}$/);
@@ -107,7 +99,7 @@ window.onload = function(){
                      var result = xhr.responseText;
                      if(result == 1){
                          // 准备跳转的页面
-                         window.location.href="index.html"
+                         window.location.href = "index.html?uname=" + $uname;
                          return;
                      };
                      if(result == 0){
@@ -124,17 +116,5 @@ window.onload = function(){
             userPwd.style.borderColor = "red";
             return;
         }
-    })
-    
-    
-
-    
-
-
-    
-
-
-
-
-
+    });
 }

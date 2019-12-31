@@ -13,7 +13,6 @@ window.onload = function(){
             videoDe.style.display = "block";  
         }
     })
-
     // nav栏的定位类型切换
     // 获取元素
     var dataNav = document.querySelector(".data_nav");

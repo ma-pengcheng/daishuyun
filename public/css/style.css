@@ -150,7 +150,8 @@
   height: 400px;
   display: block; }
 
-.left, .right {
+.left,
+.right {
   position: absolute;
   width: 40px;
   height: 70px;
@@ -634,6 +635,42 @@
   background: linear-gradient(to right, #68CF76, #16a3ff); }
 
 /* home_form end*/
+/* 侧边电梯栏 begin*/
+.lift {
+  position: fixed;
+  z-index: 999;
+  right: 5px;
+  top: 280px;
+  width: 60px;
+  background-color: #FFFFFF;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.7s linear;
+  opacity: 0; }
+
+.lift li {
+  float: left;
+  height: 60px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  padding: 10px;
+  word-wrap: normal;
+  cursor: pointer; }
+
+li.list_item {
+  color: #fff;
+  background-color: #16a3ff; }
+
+.lift ul li:not(:last-child) {
+  border-bottom: 1px solid #ddd; }
+
+.lift ul li:hover {
+  background-color: #16a3ff; }
+
+.lift ul li:hover a {
+  color: #fff; }
+
+/* 侧边电梯栏 end*/
 /* 主体(container)部分结束 */
 /* footer begin*/
 .footer {
@@ -745,7 +782,6 @@
   color: #666666; }
 
 /* footer end */
-<<<<<<< HEAD
 /* container stack_banner begin*/
 .stack_banner {
   margin-top: 60px;
@@ -2334,6 +2370,12 @@
   left: 5px;
   color: red; }
 
+.user_name_box > .login_name_success {
+  position: absolute;
+  display: inline-block;
+  right: -28px;
+  top: 12px; }
+
 .login_box input:hover {
   border: 1px solid #40a9ff; }
 
@@ -2669,5 +2711,3 @@
   color: #3a9cf8; }
 
 /* 新闻详情页面 结束*/
-=======
->>>>>>> 7dc9d03e9f91014cb20420db341ab252d4c2994c
